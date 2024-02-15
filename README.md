@@ -25,8 +25,8 @@ mindmap
              (Архивация данных)
                 [Хранилище данных]
           
-```
-```mermaid
+
+
 C4Context
 
 title System Context diagram for Stock Exchange Data Processing System
@@ -48,8 +48,7 @@ Enterprise_Boundary(b0, "Stock Exchange Boundary") {
         BiRel(Spark, Hadoop, "Sends data to")
     }
 }
-```
-```mermaid
+
 C4Container
     title Container diagram for Stock Exchange Data Processing System
 
@@ -67,7 +66,4 @@ C4Container
     Rel(data_processing, message_queue, "Sends processed data to")
     Rel(message_queue, data_analysis, "Sends data to")
     Rel(data_analysis, dashboard, "Provides data to")
-
-
-
-    ```                        
+ ```                        
